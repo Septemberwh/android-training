@@ -1,8 +1,10 @@
 package com.example.septe.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.septe.myapplication.fragment.BlankFragment;
+import com.example.septe.myapplication.fragment.BlankFragment2;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,10 +87,14 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
+            Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_gallery) {
-
+            BlankFragment f1 = new BlankFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f1).commit();
         } else if (id == R.id.nav_slideshow) {
-
+            BlankFragment2 f2 = new BlankFragment2();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f2).commit();
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
