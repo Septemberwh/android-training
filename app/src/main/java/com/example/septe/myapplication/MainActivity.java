@@ -17,6 +17,7 @@ import android.view.MenuItem;
 
 import com.example.septe.myapplication.fragment.BlankFragment;
 import com.example.septe.myapplication.fragment.BlankFragment2;
+import com.example.septe.myapplication.fragment.BlankFragment3;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -96,7 +97,8 @@ public class MainActivity extends AppCompatActivity
             BlankFragment2 f2 = new BlankFragment2();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f2).commit();
         } else if (id == R.id.nav_manage) {
-
+            BlankFragment3 f3 = new BlankFragment3();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f3).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
