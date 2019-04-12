@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.BlankFragment">
-
+    tools:context=".fragment.BlankFragment"
+    tools:ignore="UselessParent">
     <TextView
         android:id="@+id/txt_content1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#F9F900"
+        android:shadowRadius="3.0"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
         android:text="txt_content1"
-        android:textSize="20sp"/>
+        android:textColor="#ea5246"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/txt_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_content1"
+        android:layout_marginTop="10dp"
+        android:text="txt_content1.1"
+        android:textColor="#ea5246"
+        android:textStyle="bold|italic"
+        android:background="@drawable/text_radiuborder"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="你整天说着日了狗日了狗，但是你却没有来，呵呵呵呵呵呵呵呵呵呵~"
+        android:layout_below="@+id/txt_content2"
+        android:layout_marginTop="10dp"
+        android:textScaleX="1"/>
+    <TextView
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtOne"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_launcher_background"
+        android:drawableBottom="@drawable/ic_launcher_background"
+        android:drawableLeft="@drawable/ic_launcher_background"
+        android:drawableRight="@drawable/ic_launcher_background"
+        android:drawablePadding="1dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15623670608"
+        android:autoLink="phone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.baidu.com"
+        android:autoLink="web"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
 
-</FrameLayout>
+</RelativeLayout>
+
