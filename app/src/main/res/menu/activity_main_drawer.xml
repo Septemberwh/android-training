@@ -5,21 +5,49 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/test0"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Test0" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/test1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Test1" />
+        <item
+            android:id="@+id/test2"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Test2" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/test3"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Test3" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/test4"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Test4" />
+        <item
+            android:id="@+id/test5"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test5" />
+        <item
+            android:id="@+id/test6"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test6" />
+        <item
+            android:id="@+id/test7"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test7" />
+        <item
+            android:id="@+id/test8"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test8" />
+        <item
+            android:id="@+id/test9"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test9" />
+        <item
+            android:id="@+id/test10"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Test10" />
     </group>
 
     <item android:title="Communicate">

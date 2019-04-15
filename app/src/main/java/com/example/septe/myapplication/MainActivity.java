@@ -18,6 +18,8 @@ import android.view.MenuItem;
 import com.example.septe.myapplication.fragment.BlankFragment;
 import com.example.septe.myapplication.fragment.BlankFragment2;
 import com.example.septe.myapplication.fragment.BlankFragment3;
+import com.example.septe.myapplication.fragment.BlankFragment4;
+import com.example.septe.myapplication.fragment.BlankFragment5;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,23 +88,34 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.test0) {
             // Handle the camera action
             Intent intent = new Intent(MainActivity.this, Main2Activity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.test1) {
             BlankFragment f1 = new BlankFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f1).commit();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.test2) {
             BlankFragment2 f2 = new BlankFragment2();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f2).commit();
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.test3) {
             BlankFragment3 f3 = new BlankFragment3();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f3).commit();
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.test4) {
+            BlankFragment4 f4 = new BlankFragment4();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f4).commit();
+        } else if (id == R.id.test5) {
+            BlankFragment5 f5 = new BlankFragment5();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f5).commit();
+        } else if (id == R.id.test6) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.test7) {
 
+        } else if (id == R.id.test8) {
+
+        } else if (id == R.id.test9) {
+
+        } else if (id == R.id.test10) {
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
