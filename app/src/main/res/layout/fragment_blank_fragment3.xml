@@ -1,16 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragment.BlankFragment3">
 
     <TextView
-        android:id="@+id/txt_content3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="txt_content3"
-        android:textSize="20sp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择性别"
+        android:textSize="23dp"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btnMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/btnWman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择水果"
+        android:textSize="23dp"/>
+    <CheckBox
+        android:id="@+id/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="苹果"/>
+    <CheckBox
+        android:id="@+id/banana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="香蕉"
+        android:checked="true"/>
+    <CheckBox
+        android:id="@+id/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="橘子"/>
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="textOff"
+        android:textOn="textOn"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Small"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Large"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:progress="18"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"/>
+
+    <com.example.septe.myapplication.tools.CirclePgBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="5.0dp"
+        android:minHeight="5.0dp"
+        android:progressDrawable="@drawable/sb_bar"
+        android:thumb="@drawable/sb_thumb"/>
+</LinearLayout>
