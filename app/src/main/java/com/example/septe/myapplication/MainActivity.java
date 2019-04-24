@@ -22,6 +22,7 @@ import com.example.septe.myapplication.fragment.BlankFragment4;
 import com.example.septe.myapplication.fragment.BlankFragment5;
 import com.example.septe.myapplication.fragment.BlankFragment6;
 import com.example.septe.myapplication.fragment.BlankFragment7;
+import com.example.septe.myapplication.fragment.BlankFragment8;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -116,7 +117,8 @@ public class MainActivity extends AppCompatActivity
             BlankFragment7 f7 = new BlankFragment7();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f7).commit();
         } else if (id == R.id.test8) {
-
+            BlankFragment8 f8 = new BlankFragment8();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f8).commit();
         } else if (id == R.id.test9) {
 
         } else if (id == R.id.test10) {
