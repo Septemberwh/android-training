@@ -95,11 +95,14 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.test0) {
+        if (id == R.id.action2) {
             // Handle the camera action
             Intent intent = new Intent(MainActivity.this, Main2Activity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_enter);
+        } else if (id == R.id.action3) {
+            Intent intent = new Intent(MainActivity.this, Main3Activity.class);
+            startActivity(intent);
         } else if (id == R.id.test1) {
             BlankFragment f1 = new BlankFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f1).commit();
