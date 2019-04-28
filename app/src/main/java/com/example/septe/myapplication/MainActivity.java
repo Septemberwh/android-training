@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.example.septe.myapplication.fragment.BlankFragment;
 import com.example.septe.myapplication.fragment.BlankFragment2;
@@ -51,6 +52,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        BlankFragment f1 = new BlankFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f1).commit();
     }
 
     @Override
@@ -95,6 +99,7 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
             Intent intent = new Intent(MainActivity.this, Main2Activity.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_enter);
         } else if (id == R.id.test1) {
             BlankFragment f1 = new BlankFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, f1).commit();
